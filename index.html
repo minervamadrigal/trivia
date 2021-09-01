@@ -11,35 +11,36 @@
 <body>
     <div class="container">
         <h2>Trivia</h2>
-        <form action="#" class="formMain">
+        <form action="#" class="formMain" id="formMain">
             <label for = "amountQuestions">Numero de preguntas: </label>
             <input type = "number" name = "amountQuestions" id = "amountQuestions" class = "option" min = "1" max = "50" value = "10">
             <label for="category">Selecciona Categoria: </label>
             <select name="category" id="category" class="option">
                 <option value="any">Cualquiera</option>
-                <option value="generalKnowledge"> Conocimiento General</option>
-                <option value="books">Libros</option>
-                <option value="films">Peliculas</option>
-                <option value="music">Musica</option>
-                <option value="musicals">Musicales y Teatro</option>
-                <option value="videogames">Videojuegos</option>
-                <option value="boardGames">Juegos de Mesa</option>
-                <option value="scienceNature">Ciencia y Naturaleza</option>
-                <option value="computers">Computadoras</option>
-                <option value="math">Matematicas</option>
-                <option value="mythology">Mitologia</option>
-                <option value="sports">Deportes</option>
-                <option value="geo">Geografia</option>
-                <option value="history">Historia</option>
-                <option value="politics">Politica</option>
-                <option value="art">Arte</option>
-                <option value="celebrities">Celebridades</option>
-                <option value="animals">Animales</option>
-                <option value="vehicules">Vehiculos</option>
-                <option value="gadgets">Gadgets</option>
-                <option value="comics">Comics</option>
-                <option value="anime">Anime y Manga</option>
-                <option value="cartoon">Caricaturas y Animaciones</option>
+                <option value="9"> Conocimiento General</option>
+                <option value="10">Libros</option>
+                <option value="11">Peliculas</option>
+                <option value="12">Musica</option>
+                <option value="13">Musicales y Teatro</option>
+                <option value="14">Television</option>
+                <option value="15">Videojuegos</option>
+                <option value="16">Juegos de Mesa</option>
+                <option value="17">Ciencia y Naturaleza</option>
+                <option value="18">Computadoras</option>
+                <option value="19">Matematicas</option>
+                <option value="20">Mitologia</option>
+                <option value="21">Deportes</option>
+                <option value="22">Geografia</option>
+                <option value="23">Historia</option>
+                <option value="24">Politica</option>
+                <option value="25">Arte</option>
+                <option value="26">Celebridades</option>
+                <option value="27">Animales</option>
+                <option value="28">Vehiculos</option>
+                <option value="30">Gadgets</option>
+                <option value="29">Comics</option>
+                <option value="31">Anime y Manga</option>
+                <option value="32">Caricaturas y Animaciones</option>
             </select>
             <label for="difficulty">Selecciona Dificultad:</label>
             <select name="difficulty" id="difficulty" class="option">
@@ -51,12 +52,13 @@
             <label for="typeQuestion">Selecciona el Tipo:</label>
             <select name="typeQuestion" id="typeQuestion" class="option">
                 <option value="any">Cualquiera</option>
-                <option value="truefalse">Verdadero/Falso</option>
+                <option value="boolean">Verdadero/Falso</option>
                 <option value="multiple">Opcion Multiple</option>
             </select>
             <br>
-            <button type="submit" class = "btn">Comenzar</button>
+            <button type="submit" class = "btn" id="btn">Comenzar</button>
         </form>
     </div>
+    <script src="js/main.js"></script>
 </body>
 </html>
