@@ -1,12 +1,35 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    background-color: #034c77;
+    color: #FFF;
+}
+
+body{
+    font-size: 15px;
+    line-height: 1.42857143;
+}
+
+
+form{
+    display: block;
+    margin-top: 0em;
+}
+
 .container{
     margin-right:auto;
     margin-left: auto;
     padding-left: 15px;
     padding-right: 15px;
+    height: auto;
 }
 
 .formMain{
     display: block;
+    margin-top: 0em;
+}
+
+.option{
     width: 100%;
     height: 45px;
     padding: 10px 15px;
@@ -16,6 +39,25 @@
     background-color: #ffffff;
     background-image: none;
     border-radius: 4px;
+}
+
+.btn{
+    border-width: 0px;
+    border-radius: 0px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 150%;
+    margin:4px;
+    border-color: #034c77;
+    display: block;
+    width: 100%;
+    padding: 18px 27px;
+    text-align: center;
+}
+
+.btn:hover{
+    background-color: #9dd8fa;
+    text-decoration: none;
 }
 
 label{
@@ -28,3 +70,5 @@ label{
 div {
     display: block;
 }
+
+

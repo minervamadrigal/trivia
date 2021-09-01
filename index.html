@@ -10,9 +10,10 @@
 </head>
 <body>
     <div class="container">
+        <h2>Trivia</h2>
         <form action="#" class="formMain">
-            <label for="amountQuestions">Numero de preguntas: </label>
-            <input type="text" name= "amountQuestions" placeholder="Ingresa la cantidad de preguntas...">
+            <label for = "amountQuestions">Numero de preguntas: </label>
+            <input type = "number" name = "amountQuestions" id = "amountQuestions" class = "option" min = "1" max = "50" value = "10">
             <label for="category">Selecciona Categoria: </label>
             <select name="category" id="category" class="option">
                 <option value="any">Cualquiera</option>
@@ -41,16 +42,20 @@
                 <option value="cartoon">Caricaturas y Animaciones</option>
             </select>
             <label for="difficulty">Selecciona Dificultad:</label>
-            <select name="difficulty" id="difficulty">
+            <select name="difficulty" id="difficulty" class="option">
+                <option value="any">Cualquiera</option>
                 <option value="easy">Facil</option>
                 <option value="medium">Media</option>
                 <option value="hard">Dificil</option>
             </select>
             <label for="typeQuestion">Selecciona el Tipo:</label>
-            <select name="typeQuestion" id="typeQuestion">
+            <select name="typeQuestion" id="typeQuestion" class="option">
+                <option value="any">Cualquiera</option>
                 <option value="truefalse">Verdadero/Falso</option>
                 <option value="multiple">Opcion Multiple</option>
             </select>
+            <br>
+            <button type="submit" class = "btn">Comenzar</button>
         </form>
     </div>
 </body>
