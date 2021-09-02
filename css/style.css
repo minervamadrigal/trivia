@@ -62,11 +62,6 @@ form{
     background-color: #ffffff;
 }
 
-.btn:hover, .btnTrivia:hover{
-    background-color: rgba(69, 161, 67, 0.4);
-    text-decoration: none;
-}
-
 .btnTrivia{
     border-width: 0px;
     border-radius: 10px;
