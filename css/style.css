@@ -147,6 +147,31 @@ form{
     background-color: red;
 }
 
+.headerSummary{
+    font-size: 50px;
+    display: inline-block;
+}
+
+.btnRefresh{
+    border-width: 0px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 150%;
+    margin-top: 50px;
+    border-color: #034c77;
+    display: inline-block;
+    width: 20%;
+    padding: 18px 27px;
+    float: right;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.questionDiv{
+    margin-top: 30px;
+}
+
 p{
     font-size:x-large;
     margin-left: 40px;
