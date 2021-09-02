@@ -22,6 +22,11 @@ form{
     padding-left: 15px;
     padding-right: 15px;
     height: auto;
+    
+}
+
+.hid{
+    visibility: hidden;
 }
 
 .formMain{
@@ -43,11 +48,12 @@ form{
 
 .btn{
     border-width: 0px;
-    border-radius: 0px;
+    border-radius: 10px;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 150%;
     margin:4px;
+    margin-top: 30px;
     border-color: #034c77;
     display: block;
     width: 100%;
@@ -55,9 +61,104 @@ form{
     text-align: center;
 }
 
-.btn:hover{
-    background-color: #9dd8fa;
+.btn:hover, .btnTrivia:hover{
+    background-color: rgba(69, 161, 67, 0.4);
     text-decoration: none;
+}
+
+.btnTrivia{
+    border-width: 0px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 150%;
+    margin-top:10px;
+    border-color: #034c77;
+    display: block;
+    width: 100%;
+    padding: 18px 27px;
+    text-align: center;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.actions{
+    margin-right: 50px;
+}
+
+.easy {
+    color:green;
+}
+
+.medium{
+    color:yellow;
+}
+
+.hard{
+    color:red;
+}
+
+.btnMovePrevious{
+    border-width: 0px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 150%;
+    margin-top: 50px;
+    border-color: #034c77;
+    display: inline-block;
+    width: 40%;
+    padding: 18px 27px;
+    text-align: center;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.btnMoveNext{
+    border-width: 0px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 150%;
+    margin-top: 50px;
+    border-color: #034c77;
+    display: inline-block;
+    width: 40%;
+    padding: 18px 27px;
+    text-align: center;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.moveQuestion{
+    text-align: center;
+}
+
+.scoreHeader{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.w{
+    background-color: green;
+}
+
+.incorrect{
+    background-color: red;
+}
+
+p{
+    font-size:x-large;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+h2{
+    margin-top: 80px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: auto;
+    font-size: xx-large;
 }
 
 label{
