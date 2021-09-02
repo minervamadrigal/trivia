@@ -112,9 +112,9 @@ function renderTrivia(dataArray, index, indexBtn){
     nextButton.innerText = "Siguiente"
     nextButton.classList.add("btnMoveNext");
 
-    const scoreHeader = document.createElement("h2");
-    scoreHeader.innerText = `Tu Puntuacion es: ${score}`;
-    scoreHeader.classList.add("scoreHeader")
+    //const scoreHeader = document.createElement("h2");
+   // scoreHeader.innerText = `Tu Puntuacion es: ${score}`;
+    //scoreHeader.classList.add("scoreHeader")
 
     container.appendChild(questionContainer);
     questionContainer.appendChild(questionUnique);
@@ -146,7 +146,7 @@ function renderTrivia(dataArray, index, indexBtn){
     moveQuestion.appendChild(previousButton);
     moveQuestion.appendChild(nextButton);
 
-    scoreDiv.appendChild(scoreHeader);    
+    //scoreDiv.appendChild(scoreHeader);    
 }
 
 function addClickTrivia (){
@@ -273,7 +273,6 @@ function finishTrivia(datas){
             renderTrivia(datas, i, i); 
             removeContainers("headerTrivia");
             removeContainers("moveQuestion");
-            removeContainers("scoreDiv");
             let children = document.getElementById(i).children;            
             for(let j = 0;j < children.length; j++){
                 if(answers[i] == j){
