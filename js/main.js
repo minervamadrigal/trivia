@@ -101,8 +101,8 @@ function renderTrivia(dataArray, index, indexBtn){
     let moveQuestion = document.createElement("div");
     moveQuestion.classList.add("moveQuestion");
 
-    let scoreDiv = document.createElement("div");
-    scoreDiv.classList.add("scoreDiv")
+    //let scoreDiv = document.createElement("div");
+    //scoreDiv.classList.add("scoreDiv")
 
     const previousButton = document.createElement("button");
     previousButton.innerText = "Anterior";
