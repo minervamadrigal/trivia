@@ -164,8 +164,18 @@ form{
     margin-right: 15px;
 }
 
+@media only screen and (max-width:768px){
+    .btnRefresh{
+        font-size: 50%;
+    }
+}
 .questionDiv{
     margin-top: 30px;
+}
+
+.message{
+    font-style: italic;
+    font-size: medium;
 }
 
 p{

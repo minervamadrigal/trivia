@@ -255,7 +255,7 @@ function makeHeader(){
 
 function btnRefresh(){
     let refreshButton = document.createElement("button");
-    refreshButton.innerText = "Refresh";
+    refreshButton.innerText = "Retry";
     refreshButton.classList.add("btnRefresh");
     let triviaDiv = document.getElementById("trivia");
     triviaDiv.appendChild(refreshButton);
@@ -264,11 +264,29 @@ function btnRefresh(){
     })
 }
 
+function showScore(){
+    let showMessage = document.createElement("p");
+    if(score == 0){
+        showMessage.innerText = "No le atinaste a ninguna";
+    }else if(score > 0 && score < Math.floor(lengthArray/2)){
+        showMessage.innerText = "Ni la mitad";
+    }else if(score > Math.floor(lengthArray/2) && score < lengthArray-1){
+        showMessage.innerText = "Algo es algo";
+    }else if(score == lengthArray){
+        showMessage.innerText = "Felicidades, puntaje perfecto";
+    }    
+    console.log(lengthArray/2)
+    showMessage.classList.add("message");
+    let triviaDiv = document.getElementById("trivia");
+    triviaDiv.appendChild(showMessage);
+}
+
 function finishTrivia(datas){
     if(!answers.includes(null)){
         removeContainers("questionDiv");
         makeHeader();
         btnRefresh();
+        showScore();
         for(let i = 0; i <datas.results.length; i++){
             renderTrivia(datas, i, i); 
             removeContainers("headerTrivia");
