@@ -59,6 +59,7 @@ form{
     width: 100%;
     padding: 18px 27px;
     text-align: center;
+    background-color: #ffffff;
 }
 
 .btn:hover, .btnTrivia:hover{
@@ -148,7 +149,7 @@ form{
 }
 
 .headerSummary{
-    font-size: 50px;
+    font-size: large;
     display: inline-block;
 }
 
