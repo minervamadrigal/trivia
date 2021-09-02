@@ -120,7 +120,7 @@ function renderTrivia(dataArray, index, indexBtn){
     questionContainer.appendChild(questionUnique);
     questionContainer.appendChild(buttonContainer);
     questionContainer.appendChild(moveQuestion);
-    questionContainer.appendChild(scoreDiv);
+    //questionContainer.appendChild(scoreDiv);
 
     questionUnique.appendChild(questionCategory);
     questionUnique.appendChild(questionDifficulty);
@@ -151,7 +151,7 @@ function renderTrivia(dataArray, index, indexBtn){
 
 function addClickTrivia (){
     let getButton = document.querySelectorAll(".btnTrivia");
-    let header = document.querySelectorAll(".scoreHeader");
+    //let header = document.querySelectorAll(".scoreHeader");
     
     for(let button of getButton){
         for(let i = 0;i<getButton.length;i++){
@@ -161,7 +161,7 @@ function addClickTrivia (){
                 if(button.className.match("0")){
                     score += 1;
                     button.classList.add("w");
-                    header[0].innerText = `Tu Puntuacion es: ${score}`; 
+                    //header[0].innerText = `Tu Puntuacion es: ${score}`; 
                     answers[indice] = 0;               
                     disableButtons(getButton);
                 }else{
@@ -255,7 +255,7 @@ function makeHeader(){
 
 function btnRefresh(){
     let refreshButton = document.createElement("button");
-    refreshButton.innerText = "Jugar Otra Vez";
+    refreshButton.innerText = "Refresh";
     refreshButton.classList.add("btnRefresh");
     let triviaDiv = document.getElementById("trivia");
     triviaDiv.appendChild(refreshButton);
